@@ -26,9 +26,9 @@ var map = new kakao.maps.Map(mapContainer, mapOption);
     function setCenter(lat,lng)
     {
         marker.setMap(null); //마커 지움
-        var mp = new kakao.maps.LatLng(lat,lng)
+        var mp = new kakao.maps.LatLng(lat,lng);
         map.setCenter(mp); //맵 중심 이동
-        marker = new kakao.maps.Marker({ position:mp })
+        marker = new kakao.maps.Marker({ position:mp });
         marker.setMap(map);//마커를 그림
     }
     
